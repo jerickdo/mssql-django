@@ -123,7 +123,6 @@ class DatabaseWrapper(BaseDatabaseWrapper):
         'SmallAutoField': 'IDENTITY (1, 1)',
     }
     data_type_check_constraints = {
-        'JSONField': '(ISJSON ("%(column)s") = 1)',
         'PositiveIntegerField': '[%(column)s] >= 0',
         'PositiveSmallIntegerField': '[%(column)s] >= 0',
         'PositiveBigIntegerField': '[%(column)s] >= 0',
